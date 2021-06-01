@@ -11,8 +11,8 @@ class Location extends Model
     'state',
   ];
 
-
-   public function employees(){
+  //one to many
+  public function employees(){
     return $this -> hasMany(Employee::class);
   }
 }
